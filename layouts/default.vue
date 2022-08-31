@@ -5,29 +5,39 @@
         <template #brand>
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
                 <img
-                    src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-                    alt="Lightweight UI components for Vue.js based on Bulma"
+                    src="https://museulinguaportuguesa.org.br/wp-content/uploads/2017/12/Ibis-Hotel.jpg"
+                    alt="https://museulinguaportuguesa.org.br/wp-content/uploads/2017/12/Ibis-Hotel.jpg"
                 >
             </b-navbar-item>
         </template>
         <template #start>
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                Home
+                HOME
             </b-navbar-item>
             <b-navbar-item tag="router-link" :to="{ path: '/sobre' }">
-                Sobre
+                REDES
             </b-navbar-item>
         </template>
 
         <template #end>
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Cadastre-se</strong>
+                    <a class="button is-white">
+                        RESERVA
                     </a>
+                  
                     <a class="button is-light">
-                        Login
+                        HOTEIS
                     </a>
+                  
+                  <a class="button is-light">
+                        CADASTRO
+                    </a>
+
+                   <a class="button is-primary">
+                        CHECK-IN
+                    </a>
+                  
                 </div>
             </b-navbar-item>
         </template>
