@@ -83,7 +83,7 @@
   <div class="column is-6">
     <article class="notification is-white">
            
-          <p class="title">Diária</p>
+          <p class="title">Diária  </p>
           <p class="subtitle">R$150,00</p>
           <router-link :to="{ path: '/imagens' }">Reservar</router-link>
         </article>
