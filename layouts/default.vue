@@ -14,7 +14,7 @@
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
                 HOME
             </b-navbar-item>
-            <b-navbar-item tag="router-link" :to="{ path: '/sobre' }">
+            <b-navbar-item tag="router-link" :to="{ path: '/redes   ' }">
                 REDES
             </b-navbar-item>
         </template>
@@ -22,17 +22,17 @@
         <template #end>
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a class="button is-white">
-                        RESERVA
-                    </a>
+                    <b-navbar-item tag="router-link" :to="{ path: '/reserva' }">
+                RESERVA
+            </b-navbar-item>
                   
-                    <a class="button is-light">
-                        HOTEIS
-                    </a>
+            <b-navbar-item tag="router-link" :to="{ path: '/hoteis' }">
+                HOTÉIS
+            </b-navbar-item>
                   
-                  <a class="button is-light">
-                        CADASTRO
-                    </a>
+                    <b-navbar-item tag="router-link" :to="{ path: '/cadastro' }">
+                CADASTRO
+            </b-navbar-item>
 
                    <a class="button is-primary">
                         CHECK-IN
