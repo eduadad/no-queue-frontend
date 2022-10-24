@@ -40,7 +40,12 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
+    '@nuxtjs/axios',
   ],
+
+  axios: {
+    baseURL: 'https://no-queue-backend.gustavoborn.repl.co/', // Used as fallback if no runtime config is provided
+  }, 
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

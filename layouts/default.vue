@@ -33,10 +33,17 @@
                     <b-navbar-item tag="router-link" :to="{ path: '/cadastro' }">
                 CADASTRO
             </b-navbar-item>
+                    <b-navbar-item tag="router-link" :to="{ path: '/dadoscadastrais' }">
+                DADOS CADASTRAIS
+            </b-navbar-item>
+                  <b-navbar-item tag="router-link" :to="{ path: '/finalizacao' }">
+                FINALIZAÇÃO
+            </b-navbar-item>
 
-                   <a class="button is-primary">
-                        CHECK-IN
-                    </a>
+                  <b-navbar-item tag="router-link" :to="{ path: '/checkin' }">
+                CHECK IN
+            </b-navbar-item>
+                  
                   
                 </div>
             </b-navbar-item>

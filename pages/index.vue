@@ -73,10 +73,13 @@
 <hr>
 
 
-    <div class="columns">
+    <div class="columns" v-for="hotel in hoteis"
+                 
+                    :key="hotel.id">
   <div class="column is-6">
      <article class="notification is-white">
-          <b-image class="image"  :src="require('@/assets/ibishotel.jpg')"></b-image> 
+       {{hotel.nome}}
+          <b-image class="image"  :src="hotel.foto"></b-image> 
           
         </article>
   </div>
@@ -91,49 +94,9 @@
   
 </div>
 
-    <div class="columns">
-  <div class="column is-6">
-     <article class="notification is-white,
-       
-       
-       
-       
-       
-       
-       
-       ,">
-          <b-image class="image"  :src="require('@/assets/ibishotel3.jpg')"></b-image> 
-          
-        </article>
-  </div>
-  <div class="column is-6">
-    <article class="notification is-white">
-           
-          <p class="title">Diária</p>
-          <p class="subtitle">R$100,00</p>
-          <router-link :to="{ path: '/imagens' }">Reservar</router-link>
-        </article>
-  </div>
-  
-</div>
 
-    <div class="columns">
-  <div class="column is-6">
-     <article class="notification is-white">
-          <b-image class="image"  :src="require('@/assets/ibishotel2.jpg')"></b-image> 
-          
-        </article>
-  </div>
-  <div class="column is-6">
-    <article class="notification is-white">
-           
-          <p class="title">Diária</p>
-          <p class="subtitle">R$150,00</p>
-          <router-link :to="{ path: '/imagens' }">Reservar</router-link>
-        </article>
-  </div>
-  
-</div>
+
+
   
     
 
@@ -144,19 +107,14 @@
     
 
     export default {
+        async asyncData({ $axios }) {
+          const cidades = await $axios.$get('/api/cidades/')
+          const hoteis = await $axios.$get('/api/hotels/')
+          return { cidades,hoteis }
+        },
         data() {
             return {
-              cidades: [
-                {
-                  nome: "Curitiba"
-                },
-                {
-                  nome: "São Paulo"
-                },
-                {
-                  nome: "Rio de Janeiro"
-                }
-              ],
+              
               numeros: [
                 {
                   nome: "1"

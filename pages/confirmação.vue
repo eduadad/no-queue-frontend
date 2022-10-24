@@ -1,5 +1,5 @@
 <template>
-<div>
+
 
   
   <div class="columns">
@@ -16,7 +16,13 @@
       
 
        
-         <b-image style = 'width: 300px;' class="image mt-2" is-6 :src="require('@/assets/qrcolde.png')"></b-image>
+         <b-image style = 'width: 300px;' class="image mt-2" is-6 :src="require('@/assets/qrcode2.jpg')"></b-image>
        
       </div>
+
+  </div>
+  
+  
+    
+  </template>
     
