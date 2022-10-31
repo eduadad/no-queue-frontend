@@ -60,7 +60,7 @@
   </div>
       <section class="columns is-vcentered is-centered has-text-centered mt-3">
         <div class="column is-2">
-      <b-button size="is-small" tag="router-link" expanded :to="{ path: '/hospedes' }" type="is-primary" outlined rounded >Voltar</b-button>
+      <b-button size="is-small" tag="router-link" expanded :to="{ path: '/' }" type="is-primary" outlined rounded >Voltar</b-button>
         </div>
       </section>
     

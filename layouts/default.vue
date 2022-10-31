@@ -11,34 +11,20 @@
             </b-navbar-item>
         </template>
         <template #start>
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
+            <b-navbar-item tag="router-link" :to="{ path: '/home' }">
                 HOME
             </b-navbar-item>
-            <b-navbar-item tag="router-link" :to="{ path: '/redes   ' }">
-                REDES
-            </b-navbar-item>
+            
         </template>
 
         <template #end>
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <b-navbar-item tag="router-link" :to="{ path: '/reserva' }">
-                RESERVA
-            </b-navbar-item>
+                   
                   
-            <b-navbar-item tag="router-link" :to="{ path: '/hoteis' }">
-                HOTÉIS
-            </b-navbar-item>
+            
                   
-                    <b-navbar-item tag="router-link" :to="{ path: '/cadastro' }">
-                CADASTRO
-            </b-navbar-item>
-                    <b-navbar-item tag="router-link" :to="{ path: '/dadoscadastrais' }">
-                DADOS CADASTRAIS
-            </b-navbar-item>
-                  <b-navbar-item tag="router-link" :to="{ path: '/finalizacao' }">
-                FINALIZAÇÃO
-            </b-navbar-item>
+                   
 
                   <b-navbar-item tag="router-link" :to="{ path: '/checkin' }">
                 CHECK IN
@@ -55,7 +41,7 @@
     <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>Nuxt exemplo</strong> by Robson Luz. 
+          <strong>No Queue</strong>  
           <a target="_blank" href="https://fae.edu">FAE Centro Universitário</a>
         </p>
       </div>
