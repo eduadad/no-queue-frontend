@@ -34,15 +34,15 @@
 
 
 
-        const hotel = await $axios.$get('/api/hotels/'+query.hotel+"/")
+        //const hotel = await $axios.$get('/hotels/'+query.hotel+"/")
           var reserva={
-            hotel:hotel,
+
             nome: "",
             email:"",
             cpfourg:"",
             telefone:""
           }
-          return { reserva,hotel }
+          return { reserva }
         },
         
        
@@ -51,12 +51,12 @@
             var self = this;
 
             //Chama a api para criar o usuário
-            this.$axios.post('/api/reservas/', this.reserva).then((response) => {
+            this.$axios.post('/usuarios-create/', this.reserva).then((response) => {
               console.log(response);
               //Mostra a mensagem de sucesso
-              self.$buefy.dialog.alert('reserva adicionado com sucesso!')
+              self.$buefy.dialog.alert('Cadastro realizado com sucesso!')
               //Navega para o MeusPedidos
-              self.$router.push({ name: 'confres', force:true });
+              self.$router.push({ path: '/', force:true });
             })            
           }
         }

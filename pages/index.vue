@@ -91,7 +91,7 @@
            <p class="subtitle mt-3 is-3"> {{hotel.nome}}</p> 
            
           <p class="subtitle mt-3 mb-6">R${{hotel.valor}}</p> 
-          <b-button outlined tag="router-link" expanded :to="{ path: '/cadastro',query:{hotel:hotel.id} }" type="is-primary">Reservar agora</b-button>
+        <b-button tag="router-link" :to="{ path: '/reserva', query:{hotel:hotel.id} }" outlined  expanded  type="is-primary">Reservar agora</b-button>
         </article>
   </div>
   
@@ -108,6 +108,7 @@
 </template>
 <script>
 
+
     
 
     export default {
@@ -122,8 +123,8 @@
           }
  
           
-          const cidades = await $axios.$get('/api/cidades/')
-          const hoteis = await $axios.$get('/api/hotels/'+queryHotels)
+          const cidades = await $axios.$get('/cidades/')
+          const hoteis = await $axios.$get('/hotels/'+queryHotels)
           return { cidades,hoteis }
         },
         data() {
@@ -147,6 +148,9 @@
 
         },
         methods: {
+          reservar(hotel){
+            
+          },
           buscar() {
             console.log(this.cidade);
             //console.log(event);

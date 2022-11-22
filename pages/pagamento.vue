@@ -9,7 +9,7 @@
       
       <div class="column is-4">
         <form class="box p-6" style = "background-color: #c3c3c3">
-        <h1 class="title"> Pagamento</h1>
+        <h1 class="title">Pagamento</h1>
 
         
         <b-image class="image" :src="require('@/assets/visas.png')"></b-image>

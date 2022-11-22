@@ -12,15 +12,15 @@
     
         
 
-        <b-field label="CPF ou RG">
-            <b-input v-model="name" placeholder = "Insira seu CPF ou RG"></b-input>
+        <b-field label="Número da reserva">
+            <b-input v-model="name" placeholder = "Insira o número da reserva"></b-input>
         </b-field>
       
     </section>
     
    <div class="columns is-vcentered is-centered has-text-centered mt-6">
     <div class="column is-5">
-      <b-button outlined rounded tag="router-link" expanded :to="{ path: '/hospedes' }" type="is-primary">Próximo</b-button>
+      <b-button outlined rounded tag="router-link" expanded :to="{ path: '/finalizacao' }" type="is-primary">Próximo</b-button>
 
     </div>
   </div>
